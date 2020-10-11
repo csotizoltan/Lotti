@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:text="@string/title"
         android:textSize="20sp"
-        android:textColor="#F44336"
+        android:textColor="@color/tvTitle"
         android:layout_marginTop="20sp"
         android:gravity="center">
     </TextView>
