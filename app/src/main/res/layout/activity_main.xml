@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textSize="20sp"
+        android:textColor="#F44336"
+        android:layout_marginTop="20sp"
+        android:gravity="center">
+    </TextView>
+
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="27sp"
+            android:textColor="@color/lotteryNumber1"
+            android:layout_marginStart="25sp"
+            android:layout_marginTop="105sp"
+            android:id="@+id/lotteryNumber1">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textColor="@color/lotteryNumber2"
+            android:layout_marginStart="40sp"
+            android:layout_marginTop="105sp"
+            android:id="@+id/lotteryNumber2">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textColor="@color/lotteryNumber3"
+            android:layout_marginStart="45sp"
+            android:layout_marginTop="105sp"
+            android:id="@+id/lotteryNumber3">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textColor="@color/lotteryNumber4"
+            android:layout_marginStart="45sp"
+            android:layout_marginTop="105sp"
+            android:id="@+id/lotteryNumber4">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textColor="@color/lotteryNumber5"
+            android:layout_marginStart="45sp"
+            android:layout_marginTop="105sp"
+            android:id="@+id/lotteryNumber5">
+        </TextView>
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:height="20sp"
+        android:width="300sp"
+        android:text="Start"
+        android:letterSpacing="0.5"
+        android:textStyle="bold"
+        android:id="@+id/btn_start"
+        android:layout_centerInParent="true"
+        android:background="@color/Backgrnd_btnStart"
+        android:textColor="@color/textColor_btnStart"
+        android:gravity="center">
+    </Button>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/otoslotto"
+        android:layout_marginTop="300sp"
+        android:maxHeight="200sp">
+    </ImageView>
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="lotteryNumber1">#F44336</color>
+    <color name="lotteryNumber2">#9C27B0</color>
+    <color name="lotteryNumber3">#3F51B5</color>
+    <color name="lotteryNumber4">#FF9800</color>
+    <color name="lotteryNumber5">#009688</color>
+    <color name="Backgrnd_btnStart">#2C9F30</color>
+    <color name="textColor_btnStart">#DBDFD2</color>
+</resources>
