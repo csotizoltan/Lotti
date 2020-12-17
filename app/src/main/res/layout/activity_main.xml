@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical">
 
     <TextView
         android:layout_width="match_parent"
@@ -13,89 +14,67 @@
         android:textSize="20sp"
         android:textColor="@color/tvTitle"
         android:layout_marginTop="20sp"
+        android:layout_marginBottom="80sp"
         android:gravity="center">
     </TextView>
 
-    
-    <LinearLayout
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:text="Ötöslottó"
+        android:textStyle="bold"
+        android:width="330sp"
+        android:textSize="20sp"
+        android:layout_marginTop="25sp"
+        android:textColor="@color/btnMainTextColor590"
+        android:background="@color/btnMainBackgrnd590"
+        android:layout_gravity="center"
+        android:id="@+id/btnMainLottery590">
+    </Button>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="27sp"
-            android:textColor="@color/lotteryNumber1"
-            android:layout_marginStart="25sp"
-            android:layout_marginTop="105sp"
-            android:id="@+id/lotteryNumber1">
-        </TextView>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hatoslottó"
+        android:textStyle="bold"
+        android:width="330sp"
+        android:textSize="20sp"
+        android:layout_marginTop="25sp"
+        android:textColor="@color/btnMainTextColor645"
+        android:background="@color/btnMainBackgrnd645"
+        android:layout_gravity="center"
+        android:id="@+id/btnMainLottery645">
+    </Button>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:textColor="@color/lotteryNumber2"
-            android:layout_marginStart="40sp"
-            android:layout_marginTop="105sp"
-            android:id="@+id/lotteryNumber2">
-        </TextView>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:textColor="@color/lotteryNumber3"
-            android:layout_marginStart="45sp"
-            android:layout_marginTop="105sp"
-            android:id="@+id/lotteryNumber3">
-        </TextView>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:textColor="@color/lotteryNumber4"
-            android:layout_marginStart="45sp"
-            android:layout_marginTop="105sp"
-            android:id="@+id/lotteryNumber4">
-        </TextView>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:textColor="@color/lotteryNumber5"
-            android:layout_marginStart="45sp"
-            android:layout_marginTop="105sp"
-            android:id="@+id/lotteryNumber5">
-        </TextView>
-
-    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skandináv lottó"
+        android:textStyle="bold"
+        android:width="330sp"
+        android:textSize="20sp"
+        android:layout_marginTop="25sp"
+        android:textColor="@color/btnMainTextColor735"
+        android:background="@color/btnMainBackgrnd735"
+        android:layout_gravity="center"
+        android:id="@+id/btnMainLottery735">
+    </Button>
 
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:height="20sp"
-        android:width="300sp"
-        android:text="Start"
-        android:letterSpacing="0.5"
+        android:text="Eurojackpot"
         android:textStyle="bold"
-        android:id="@+id/btn_start"
-        android:layout_centerInParent="true"
-        android:background="@color/Backgrnd_btnStart"
-        android:textColor="@color/textColor_btnStart"
-        android:gravity="center">
+        android:width="330sp"
+        android:textSize="20sp"
+        android:layout_marginTop="25sp"
+        android:textColor="@color/btnMainTextColorEurojackpot"
+        android:background="@color/btnMainBackgrndEurojackpot"
+        android:layout_gravity="center"
+        android:id="@+id/btnMainEurojackpot">
     </Button>
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/otoslotto"
-        android:layout_marginTop="300sp"
-        android:maxHeight="200sp">
-    </ImageView>
 
-</RelativeLayout>
+
+</LinearLayout>

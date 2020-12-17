@@ -3,12 +3,31 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+
     <color name="tvTitle">#9C27B0</color>
+
+    <color name="btnMainTextColor590">#E8E4E4</color>
+    <color name="btnMainBackgrnd590">#C15151</color>
+    <color name="btnMainTextColor645">#E8E4E4</color>
+    <color name="btnMainBackgrnd645">#AA00FF</color>
+    <color name="btnMainTextColor735">#E8E4E4</color>
+    <color name="btnMainBackgrnd735">#6200EA</color>
+    <color name="btnMainTextColorEurojackpot">#E8E4E4</color>
+    <color name="btnMainBackgrndEurojackpot">#304FFE</color>
+    <color name="btnMainPevTipTextColor">#E8E4E4</color>
+    <color name="btnMainPevTipBackgrnd">#FFAB00</color>
+
+
     <color name="lotteryNumber1">#F44336</color>
     <color name="lotteryNumber2">#9C27B0</color>
     <color name="lotteryNumber3">#3F51B5</color>
     <color name="lotteryNumber4">#FF9800</color>
     <color name="lotteryNumber5">#009688</color>
-    <color name="Backgrnd_btnStart">#2C9F30</color>
-    <color name="textColor_btnStart">#DBDFD2</color>
+    <color name="lotteryNumber6">#009688</color>
+    <color name="lotteryNumber7">#009688</color>
+
+    <color name="btnStartTextColor">#E8E4E4</color>
+    <color name="btnStartBackgrnd">#2C9F30</color>
+    <color name="btnBackTextColor">#D8D2D2</color>
+    <color name="btnBackBackgrnd">#3700B3</color>
 </resources>

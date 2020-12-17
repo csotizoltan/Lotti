@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Lottery590">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="27sp"
+            android:textColor="@color/lotteryNumber1"
+            android:layout_marginStart="25sp"
+            android:layout_marginTop="105sp"
+            android:id="@+id/tvLotteryNumber590Numb1">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textColor="@color/lotteryNumber2"
+            android:layout_marginStart="40sp"
+            android:layout_marginTop="105sp"
+            android:id="@+id/tvLotteryNumber590Numb2">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textColor="@color/lotteryNumber3"
+            android:layout_marginStart="45sp"
+            android:layout_marginTop="105sp"
+            android:id="@+id/tvLotteryNumber590Numb3">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textColor="@color/lotteryNumber4"
+            android:layout_marginStart="45sp"
+            android:layout_marginTop="105sp"
+            android:id="@+id/tvLotteryNumber590Numb4">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textColor="@color/lotteryNumber5"
+            android:layout_marginStart="45sp"
+            android:layout_marginTop="105sp"
+            android:id="@+id/tvLotteryNumber590Numb5">
+        </TextView>
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ötöslottó tipp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="@color/btnStartBackgrnd"
+        android:textColor="@color/btnStartTextColor"
+        android:width="300sp"
+        android:layout_marginTop="190sp"
+        android:layout_marginLeft="58sp"
+        android:id="@+id/btn590Start">
+    </Button>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/otoslotto_4"
+        android:layout_marginTop="270sp"
+        android:layout_marginLeft="10sp"
+        android:maxHeight="180sp">
+    </ImageView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vissza"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="510sp"
+        android:background="@color/btnBackBackgrnd"
+        android:textColor="@color/btnBackTextColor"
+        android:id="@+id/btnLottery590Back">
+    </Button>
+
+</RelativeLayout>

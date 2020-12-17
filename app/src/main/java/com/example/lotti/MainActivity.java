@@ -2,22 +2,14 @@ package com.example.lotti;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
-
-import java.text.MessageFormat;
-import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity {
 
-    private TextView textLotteryNumber1, textLotteryNumber2,
-            textLotteryNumber3, textLotteryNumber4, textLotteryNumber5;
-    private Button btn_start;
-
-    static int[] lotteryNumbers = new int[5];
-
+    private Button btnMainLottery590, btnMainLottery645, btnMainLottery735, btnMainEurojackpot;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,35 +17,53 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         init();
+        listeners();
+    }
 
-        btn_start.setOnClickListener(new View.OnClickListener() {
+
+    private void listeners() {
+        btnMainLottery590.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                LotteryDraws590();
+                Intent lottery590 = new Intent(MainActivity.this, Lottery590.class);
+                startActivity(lottery590);
+                finish();
             }
+        });
 
-            private void LotteryDraws590() {
-                for (int i = 0; i < 5; i++) {
-                    lotteryNumbers[i] = (int) (Math.random() * 90) + 1;
-                }
+        btnMainLottery645.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent lottery645 = new Intent(MainActivity.this, Lottery645.class);
+                startActivity(lottery645);
+                finish();
+            }
+        });
 
-                Arrays.sort(lotteryNumbers);
+        btnMainLottery735.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent lottery735 = new Intent(MainActivity.this, Lottery735.class);
+                startActivity(lottery735);
+                finish();
+            }
+        });
 
-                textLotteryNumber1.setText(MessageFormat.format("{0}", lotteryNumbers[0]));
-                textLotteryNumber2.setText(MessageFormat.format("{0}", lotteryNumbers[1]));
-                textLotteryNumber3.setText(MessageFormat.format("{0}", lotteryNumbers[2]));
-                textLotteryNumber4.setText(MessageFormat.format("{0}", lotteryNumbers[3]));
-                textLotteryNumber5.setText(MessageFormat.format("{0}", lotteryNumbers[4]));
+        btnMainEurojackpot.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent eurojackpot = new Intent(MainActivity.this, Eurojackpot.class);
+                startActivity(eurojackpot);
+                finish();
             }
         });
     }
 
+
     private void init() {
-        textLotteryNumber1 = findViewById(R.id.lotteryNumber1);
-        textLotteryNumber2 = findViewById(R.id.lotteryNumber2);
-        textLotteryNumber3 = findViewById(R.id.lotteryNumber3);
-        textLotteryNumber4 = findViewById(R.id.lotteryNumber4);
-        textLotteryNumber5 = findViewById(R.id.lotteryNumber5);
-        btn_start = findViewById(R.id.btn_start);
+        btnMainLottery590 = findViewById(R.id.btnMainLottery590);
+        btnMainLottery645 = findViewById(R.id.btnMainLottery645);
+        btnMainLottery735 = findViewById(R.id.btnMainLottery735);
+        btnMainEurojackpot = findViewById(R.id.btnMainEurojackpot);
     }
 }
