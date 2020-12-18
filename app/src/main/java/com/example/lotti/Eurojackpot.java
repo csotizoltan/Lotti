@@ -21,6 +21,8 @@ public class Eurojackpot extends AppCompatActivity {
     static int[] eurojackpotANumbers = new int[5];
     static int[] eurojackpotBNumbers = new int[2];
 
+    DBhelper database;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -71,6 +73,20 @@ public class Eurojackpot extends AppCompatActivity {
         tvEurojackpotBNumber1.setText(MessageFormat.format("{0}", eurojackpotBNumbers[1]));
     }
 
+
+/*
+    private void addDatabase() {
+        if (database.insert(lotteryNumbers590[0], lotteryNumbers590[1], lotteryNumbers590[2],
+                lotteryNumbers590[3], lotteryNumbers590[4])) {
+            Toast.makeText(this, "Sikeres rögzítés", Toast.LENGTH_SHORT).show();
+        }
+        else {
+            Toast.makeText(this, "Sikertelen rögzítés", Toast.LENGTH_SHORT).show();
+        }
+    }
+*/
+
+
     private void init() {
         tvEurojackpotANumber1 = findViewById(R.id.tvEurojackpotANumber1);
         tvEurojackpotANumber2 = findViewById(R.id.tvEurojackpotANumber2);
@@ -81,5 +97,7 @@ public class Eurojackpot extends AppCompatActivity {
         tvEurojackpotBNumber2 = findViewById(R.id.tvEurojackpotBNumber2);
         btnEurojackpotStart = findViewById(R.id.btnEurojackpotStart);
         btnEurojackpotBack = findViewById(R.id.btnEurojackpotBack);
+
+        database = new DBhelper(Eurojackpot.this);
     }
 }

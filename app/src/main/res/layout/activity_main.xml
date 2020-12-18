@@ -76,5 +76,18 @@
     </Button>
 
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Korábbi tippek"
+        android:textStyle="bold"
+        android:width="330sp"
+        android:textSize="20sp"
+        android:layout_marginTop="25sp"
+        android:textColor="@color/btnMainPevTipTextColor"
+        android:background="@color/btnMainPevTipBackgrnd"
+        android:layout_gravity="center"
+        android:id="@+id/btnMainPevTip">
+    </Button>
 
 </LinearLayout>

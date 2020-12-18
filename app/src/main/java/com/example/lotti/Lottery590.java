@@ -19,6 +19,8 @@ public class Lottery590 extends AppCompatActivity {
 
     static int[] lotteryNumbers590 = new int[5];
 
+    DBhelper database;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +33,7 @@ public class Lottery590 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 lotteryDraws590();
+                addDatabase();
             }
         });
 
@@ -60,6 +63,17 @@ public class Lottery590 extends AppCompatActivity {
     }
 
 
+    private void addDatabase() {
+        if (database.insert(lotteryNumbers590[0], lotteryNumbers590[1], lotteryNumbers590[2],
+                lotteryNumbers590[3], lotteryNumbers590[4])) {
+            Toast.makeText(this, "Sikeres rögzítés", Toast.LENGTH_SHORT).show();
+        }
+        else {
+            Toast.makeText(this, "Sikertelen rögzítés", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+
     private void init() {
         lo590Numb1 = findViewById(R.id.tvLotteryNumber590Numb1);
         lo590Numb2 = findViewById(R.id.tvLotteryNumber590Numb2);
@@ -68,5 +82,7 @@ public class Lottery590 extends AppCompatActivity {
         lo590Numb5 = findViewById(R.id.tvLotteryNumber590Numb5);
         btn590Start = findViewById(R.id.btn590Start);
         btnLottery590Back = findViewById(R.id.btnLottery590Back);
+
+        database = new DBhelper(Lottery590.this);
     }
 }

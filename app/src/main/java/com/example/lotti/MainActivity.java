@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btnMainLottery590, btnMainLottery645, btnMainLottery735, btnMainEurojackpot;
+    private Button btnMainLottery590, btnMainLottery645, btnMainLottery735, btnMainEurojackpot, btnMainPevTip;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,6 +57,15 @@ public class MainActivity extends AppCompatActivity {
                 finish();
             }
         });
+
+        btnMainPevTip.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent viewTip = new Intent(MainActivity.this, ViewTip.class);
+                startActivity(viewTip);
+                finish();
+            }
+        });
     }
 
 
@@ -65,5 +74,6 @@ public class MainActivity extends AppCompatActivity {
         btnMainLottery645 = findViewById(R.id.btnMainLottery645);
         btnMainLottery735 = findViewById(R.id.btnMainLottery735);
         btnMainEurojackpot = findViewById(R.id.btnMainEurojackpot);
+        btnMainPevTip = findViewById(R.id.btnMainPevTip);
     }
 }
