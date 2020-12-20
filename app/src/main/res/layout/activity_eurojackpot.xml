@@ -14,108 +14,149 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="27sp"
-            android:textColor="@color/lotteryNumber1"
+            android:layout_marginStart="27sp"
+            android:layout_marginTop="10sp"
+            android:text="A mező"
+            android:textColor="@color/lotteryNumber6"
+            android:textSize="20sp">
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvEurojackpotANumber1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginStart="25sp"
-            android:layout_marginTop="105sp"
-            android:id="@+id/tvEurojackpotANumber1">
+            android:layout_marginTop="40sp"
+            android:textColor="@color/lotteryNumber1"
+            android:textSize="30sp">
         </TextView>
 
         <TextView
+            android:id="@+id/tvEurojackpotANumber2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:textColor="@color/lotteryNumber2"
             android:layout_marginStart="40sp"
-            android:layout_marginTop="105sp"
-            android:id="@+id/tvEurojackpotANumber2">
+            android:layout_marginTop="40sp"
+            android:textColor="@color/lotteryNumber2"
+            android:textSize="30sp">
         </TextView>
 
         <TextView
+            android:id="@+id/tvEurojackpotANumber3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="30sp"
+            android:layout_marginStart="45sp"
+            android:layout_marginTop="40sp"
             android:textColor="@color/lotteryNumber3"
-            android:layout_marginStart="45sp"
-            android:layout_marginTop="105sp"
-            android:id="@+id/tvEurojackpotANumber3">
+            android:textSize="30sp">
         </TextView>
 
         <TextView
+            android:id="@+id/tvEurojackpotANumber4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="30sp"
+            android:layout_marginStart="55sp"
+            android:layout_marginTop="40sp"
             android:textColor="@color/lotteryNumber4"
-            android:layout_marginStart="45sp"
-            android:layout_marginTop="105sp"
-            android:id="@+id/tvEurojackpotANumber4">
+            android:textSize="30sp">
         </TextView>
+
+        <TextView
+            android:id="@+id/tvEurojackpotANumber5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45sp"
+            android:layout_marginTop="40sp"
+            android:textColor="@color/lotteryNumber5"
+            android:textSize="30sp">
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:textColor="@color/lotteryNumber5"
-            android:layout_marginStart="45sp"
-            android:layout_marginTop="105sp"
-            android:id="@+id/tvEurojackpotANumber5">
+            android:layout_marginStart="27sp"
+            android:layout_marginTop="98sp"
+            android:text="B mező"
+            android:textColor="@color/lotteryNumber6"
+            android:textSize="20sp">
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/tvEurojackpotBNumber1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27sp"
+            android:layout_marginTop="128sp"
+            android:textColor="@color/lotteryNumber6"
+            android:textSize="30sp">
         </TextView>
 
         <TextView
+            android:id="@+id/tvEurojackpotBNumber2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:textColor="@color/lotteryNumber5"
-            android:layout_marginStart="45sp"
-            android:layout_marginTop="105sp"
-            android:id="@+id/tvEurojackpotBNumber1">
-        </TextView>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:textColor="@color/lotteryNumber5"
-            android:layout_marginStart="45sp"
-            android:layout_marginTop="105sp"
-            android:id="@+id/tvEurojackpotBNumber2">
+            android:layout_marginStart="37sp"
+            android:layout_marginTop="128sp"
+            android:textColor="@color/lotteryNumber7"
+            android:textSize="30sp">
         </TextView>
 
     </LinearLayout>
 
 
     <Button
+        android:id="@+id/btnEurojackpotStart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Eurojackpot tipp"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:background="@color/btnStartBackgrnd"
-        android:textColor="@color/btnStartTextColor"
-        android:width="300sp"
+        android:layout_marginStart="58sp"
         android:layout_marginTop="190sp"
-        android:layout_marginLeft="58sp"
-        android:id="@+id/btnEurojackpotStart">
+        android:width="300sp"
+        android:background="@drawable/button_lottery_start"
+        android:text="Eurojackpot tipp"
+        android:textColor="@color/btnStartTextColor"
+        android:textSize="20sp"
+        android:textStyle="bold">
     </Button>
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/eurojackpot_1"
         android:layout_marginTop="230sp"
-        android:maxHeight="180sp">
+        android:maxHeight="180sp"
+        android:src="@drawable/eurojackpot_1">
     </ImageView>
 
     <Button
+        android:id="@+id/btnEurojackpotBack"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Vissza"
-        android:textSize="20sp"
-        android:textStyle="bold"
         android:layout_marginTop="510sp"
-        android:background="@color/btnBackBackgrnd"
+        android:background="@drawable/button_lottery_back"
+        android:text="Vissza"
         android:textColor="@color/btnBackTextColor"
-        android:id="@+id/btnEurojackpotBack">
+        android:textSize="20sp"
+        android:textStyle="bold">
     </Button>
 
 </RelativeLayout>

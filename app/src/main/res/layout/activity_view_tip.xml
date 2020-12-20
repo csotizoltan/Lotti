@@ -1,18 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ViewTip"
-    android:orientation="vertical">
-
+    tools:context=".ViewTip">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="Korábbi tippjeim"
+        android:textSize="19sp"
+        android:textColor="@color/lotteryNumber2"
+        android:layout_marginTop="35sp"
+        android:layout_marginStart="25sp"
+        android:layout_marginBottom="540dp"
+        android:layout_above="@+id/tvViewTip">
+    </TextView>
+
+    <Spinner
+        android:layout_width="175sp"
+        android:layout_height="42sp"
+        android:background="@drawable/spinner_view_tip_lottery_type"
+        android:layout_marginTop="14sp"
+        android:layout_marginStart="220sp"
+        android:popupBackground="@color/btnBackTextColor"
+        android:id="@+id/spViewTipLotteryType">
+    </Spinner>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="550sp"
         android:textSize="23sp"
+        android:textColor="@color/btnMainPressedEndColor645"
+        android:lineSpacingExtra="-3sp"
+        android:layout_marginTop="74sp"
+        android:layout_marginBottom="40sp"
+        android:layout_marginStart="25sp"
         android:maxLines="99"
+        android:layout_above="@+id/btnLottery590Back"
         android:id="@+id/tvViewTip">
     </TextView>
 
@@ -22,9 +48,10 @@
         android:text="Vissza"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:background="@color/btnBackBackgrnd"
+        android:background="@drawable/button_lottery_back"
         android:textColor="@color/btnBackTextColor"
+        android:layout_alignParentBottom="true"
         android:id="@+id/btnLottery590Back">
     </Button>
 
-</LinearLayout>
+</RelativeLayout>

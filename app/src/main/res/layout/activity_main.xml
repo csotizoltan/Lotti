@@ -27,7 +27,7 @@
         android:textSize="20sp"
         android:layout_marginTop="25sp"
         android:textColor="@color/btnMainTextColor590"
-        android:background="@color/btnMainBackgrnd590"
+        android:background="@drawable/button_main_lottery590"
         android:layout_gravity="center"
         android:id="@+id/btnMainLottery590">
     </Button>
@@ -41,7 +41,7 @@
         android:textSize="20sp"
         android:layout_marginTop="25sp"
         android:textColor="@color/btnMainTextColor645"
-        android:background="@color/btnMainBackgrnd645"
+        android:background="@drawable/button_main_lottery645"
         android:layout_gravity="center"
         android:id="@+id/btnMainLottery645">
     </Button>
@@ -55,7 +55,7 @@
         android:textSize="20sp"
         android:layout_marginTop="25sp"
         android:textColor="@color/btnMainTextColor735"
-        android:background="@color/btnMainBackgrnd735"
+        android:background="@drawable/button_main_lottery735"
         android:layout_gravity="center"
         android:id="@+id/btnMainLottery735">
     </Button>
@@ -70,7 +70,7 @@
         android:textSize="20sp"
         android:layout_marginTop="25sp"
         android:textColor="@color/btnMainTextColorEurojackpot"
-        android:background="@color/btnMainBackgrndEurojackpot"
+        android:background="@drawable/button_main_eurojackpot"
         android:layout_gravity="center"
         android:id="@+id/btnMainEurojackpot">
     </Button>
@@ -85,7 +85,7 @@
         android:textSize="20sp"
         android:layout_marginTop="25sp"
         android:textColor="@color/btnMainPevTipTextColor"
-        android:background="@color/btnMainPevTipBackgrnd"
+        android:background="@drawable/button_main_viewtip"
         android:layout_gravity="center"
         android:id="@+id/btnMainPevTip">
     </Button>

@@ -10,7 +10,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.text.MessageFormat;
+import java.text.SimpleDateFormat;
 import java.util.Arrays;
+import java.util.Calendar;
+import java.util.Locale;
 
 public class Lottery735 extends AppCompatActivity {
 
@@ -33,7 +36,7 @@ public class Lottery735 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 lotteryDraws735();
-                //addDatabase();
+                addDatabase();
             }
         });
 
@@ -65,15 +68,20 @@ public class Lottery735 extends AppCompatActivity {
     }
 
 
-/*    private void addDatabase() {
-        if (database.insert(lotteryNumbers735[0], lotteryNumbers735[1], lotteryNumbers735[2],
-                lotteryNumbers735[3], lotteryNumbers735[4], lotteryNumbers735[5], lotteryNumbers735[6])) {
+    private void addDatabase() {
+
+        Calendar calendar = Calendar.getInstance();
+        SimpleDateFormat currentDateTime = new SimpleDateFormat("yyyy.MM.dd HH:mm:ss",  Locale.getDefault());
+        String date = currentDateTime.format(calendar.getTime());
+
+        if (database.insertLottery735(lotteryNumbers735[0], lotteryNumbers735[1], lotteryNumbers735[2],
+                lotteryNumbers735[3], lotteryNumbers735[4], lotteryNumbers735[5], lotteryNumbers735[6], date)) {
             Toast.makeText(this, "Sikeres rögzítés", Toast.LENGTH_SHORT).show();
         }
         else {
             Toast.makeText(this, "Sikertelen rögzítés", Toast.LENGTH_SHORT).show();
         }
-    }*/
+    }
 
 
     private void init() {

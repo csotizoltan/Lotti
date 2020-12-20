@@ -18,16 +18,96 @@
     <color name="btnMainPevTipBackgrnd">#FFAB00</color>
 
 
+    <!-- Button Main 590-->
+
+    <color name="btnMainPressedBorderColor590">#FEFDF6</color>
+    <color name="btnMainPressedStartColor590">#345953</color>
+    <color name="btnMainPressedEndColor590">#689a92</color>
+
+    <color name="btnMainShapeBorderColor590">#FEFDF6</color>
+    <color name="btnMainShapeStartColor590">#8dbab3</color>
+    <color name="btnMainShapeEndColor590">#58857e</color>
+
+
+    <!-- Button Main 645-->
+
+    <color name="btnMainPressedBorderColor645">#FEFDF6</color>
+    <color name="btnMainPressedStartColor645">#C51162</color>
+    <color name="btnMainPressedEndColor645">#987D89</color>
+
+    <color name="btnMainShapeBorderColor645">#FEFDF6</color>
+    <color name="btnMainShapeStartColor645">#987D89</color>
+    <color name="btnMainShapeEndColor645">#C51162</color>
+
+
+    <!-- Button Main 735-->
+
+    <color name="btnMainPressedBorderColor735">#FEFDF6</color>
+    <color name="btnMainPressedStartColor735">#203CDD</color>
+    <color name="btnMainPressedEndColor735">#758DC3</color>
+
+    <color name="btnMainShapeBorderColor735">#FEFDF6</color>
+    <color name="btnMainShapeStartColor735">#758DC3</color>
+    <color name="btnMainShapeEndColor735">#203CDD</color>
+
+
+    <!-- Button Main Eurojackpot-->
+
+    <color name="btnMainPressedBorderColorEurojackpot">#FEFDF6</color>
+    <color name="btnMainPressedStartColorEurojackpot">#966A39</color>
+    <color name="btnMainPressedEndColorEurojackpot">#AEA66E</color>
+
+    <color name="btnMainShapeBorderColorEurojackpot">#FEFDF6</color>
+    <color name="btnMainShapeStartColorEurojackpot">#AEA66E</color>
+    <color name="btnMainShapeEndColorEurojackpot">#966A39</color>
+
+
+    <!-- Button Main ViewTip-->
+
+    <color name="btnMainPressedBorderColorViewTip">#FEFDF6</color>
+    <color name="btnMainPressedStartColorViewTip">#6B1098</color>
+    <color name="btnMainPressedEndColorViewTip">#A264C1</color>
+
+    <color name="btnMainShapeBorderColorViewTip">#FEFDF6</color>
+    <color name="btnMainShapeStartColorViewTip">#A264C1</color>
+    <color name="btnMainShapeEndColorViewTip">#6B1098</color>
+
+
+    <!-- Button Main LotteryStart-->
+
+    <color name="btnMainPressedBorderColorLotteryStart">#FEFDF6</color>
+    <color name="btnMainPressedStartColorLotteryStart">#16532F</color>
+    <color name="btnMainPressedEndColorLotteryStart">#6DA183</color>
+
+    <color name="btnMainShapeBorderColorLotteryStart">#FEFDF6</color>
+    <color name="btnMainShapeStartColorLotteryStart">#6DA183</color>
+    <color name="btnMainShapeEndColorLotteryStart">#16532F</color>
+
+
+    <!-- Button Main LotteryBack-->
+
+    <color name="btnMainPressedBorderColorLotteryBack">#FEFDF6</color>
+    <color name="btnMainPressedStartColorLotteryBack">#FFAB00</color>
+    <color name="btnMainPressedEndColorLotteryBack">#C3A76E</color>
+
+    <color name="btnMainShapeBorderColorLotteryBack">#FEFDF6</color>
+    <color name="btnMainShapeStartColorLotteryBack">#C3A76E</color>
+    <color name="btnMainShapeEndColorLotteryBack">#FFAB00</color>
+
+
+    <!-- Lottery Numbers-->
+
     <color name="lotteryNumber1">#F44336</color>
     <color name="lotteryNumber2">#9C27B0</color>
-    <color name="lotteryNumber3">#3F51B5</color>
-    <color name="lotteryNumber4">#FF9800</color>
-    <color name="lotteryNumber5">#009688</color>
+    <color name="lotteryNumber3">#FF9800</color>
+    <color name="lotteryNumber4">#C51162</color>
+    <color name="lotteryNumber5">#3F51B5</color>
     <color name="lotteryNumber6">#009688</color>
-    <color name="lotteryNumber7">#009688</color>
+    <color name="lotteryNumber7">#FF6D00</color>
+
+
+    <!-- Lottery Buttons-->
 
     <color name="btnStartTextColor">#E8E4E4</color>
-    <color name="btnStartBackgrnd">#2C9F30</color>
-    <color name="btnBackTextColor">#D8D2D2</color>
-    <color name="btnBackBackgrnd">#3700B3</color>
+    <color name="btnBackTextColor">#F3EDED</color>
 </resources>

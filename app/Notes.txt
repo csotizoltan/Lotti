@@ -1,0 +1,73 @@
+Notes
+
+Ötöslottó, Hatoslottó, Skandináv lottó, Eurojackpot
+
+Lottery
+
+http://www.lottoszamok.net/eurojackpot/szabalyok/
+
+To do:
+- Számok kiiratás foreach
+
+datetime
+Alapértelmezett: CURRENT_TIMESTAMP
+
+
+3 10 14 49 80
+
+
+Project: App mappára kattitva --> New --> File. A fájl az App könytárba kerül.
+
+
+public Date StringToDate(String s){
+
+    Date result = null;
+    try{
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        result  = dateFormat.parse(s);
+    }
+
+    catch(ParseException e){
+        e.printStackTrace();
+
+    }
+    return result ;
+}
+
+Calendar calendar = Calendar.getInstance();
+ calendar.set(2018, 11, 31, 59, 59, 59);
+ Date happyNewYearDate = calendar.getTime();
+
+
+
+Use Instant, replacement for java.util.Date.
+
+Instant.now()  // Capture current moment as seen in UTC.
+If you must have a Date, convert.
+
+java.util.Date.from( Instant.now() )
+
+
+o get the current moment in UTC time zone:
+
+Instant instant = Instant.now();
+To get the current moment in a particular time zone:
+
+ZoneId zoneId = ZoneId.of( "America/Montreal" );
+ZonedDateTime zdt = ZonedDateTime.now( zoneId );
+If you must have a java.util.Date for use with other classes not yet updated for the java.time types, convert from Instant.
+
+java.util.Date date = java.util.Date.from( zdt.toInstant() );
+
+
+---------------------------- Warnings ----------------------------
+Warning:(41, 44) Do not concatenate text displayed with `setText`. Use resource string with placeholders.
+Warning:(12, 9) Hardcoded string "Lottery generator - Csóti Zoltán", should use `@string` resource
+Warning:(30, 13) Consider replacing `android:layout_marginLeft` with `android:layout_marginStart="25sp"` to better support right-to-left layouts
+
+Warning:(84, 9) Attribute `letterSpacing` is only used in API level 21 and higher (current min is 19)
+Warning:(93, 6) Missing `contentDescription` attribute on image
+
+
+textLotteryNumber1.setText("" + lotteryNumbers[0]);
+textLotteryNumber1.setText(MessageFormat.format("{0}", lotteryNumbers[0]));

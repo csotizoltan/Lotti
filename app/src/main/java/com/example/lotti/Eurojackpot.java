@@ -10,7 +10,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.text.MessageFormat;
+import java.text.SimpleDateFormat;
 import java.util.Arrays;
+import java.util.Calendar;
+import java.util.Locale;
 
 public class Eurojackpot extends AppCompatActivity {
 
@@ -35,7 +38,7 @@ public class Eurojackpot extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 eurojackpot();
-                //addDatabase();
+                addDatabase();
             }
         });
 
@@ -70,21 +73,24 @@ public class Eurojackpot extends AppCompatActivity {
         tvEurojackpotANumber4.setText(MessageFormat.format("{0}", eurojackpotANumbers[3]));
         tvEurojackpotANumber5.setText(MessageFormat.format("{0}", eurojackpotANumbers[4]));
         tvEurojackpotBNumber1.setText(MessageFormat.format("{0}", eurojackpotBNumbers[0]));
-        tvEurojackpotBNumber1.setText(MessageFormat.format("{0}", eurojackpotBNumbers[1]));
+        tvEurojackpotBNumber2.setText(MessageFormat.format("{0}", eurojackpotBNumbers[1]));
     }
 
 
-/*
     private void addDatabase() {
-        if (database.insert(lotteryNumbers590[0], lotteryNumbers590[1], lotteryNumbers590[2],
-                lotteryNumbers590[3], lotteryNumbers590[4])) {
+
+        Calendar calendar = Calendar.getInstance();
+        SimpleDateFormat currentDateTime = new SimpleDateFormat("yyyy.MM.dd HH:mm:ss",  Locale.getDefault());
+        String date = currentDateTime.format(calendar.getTime());
+
+        if (database.insertLotteryEurojackpot(eurojackpotANumbers[0], eurojackpotANumbers[1], eurojackpotANumbers[2],
+                eurojackpotANumbers[3], eurojackpotANumbers[4], eurojackpotBNumbers[0], eurojackpotBNumbers[1], date)) {
             Toast.makeText(this, "Sikeres rögzítés", Toast.LENGTH_SHORT).show();
         }
         else {
             Toast.makeText(this, "Sikertelen rögzítés", Toast.LENGTH_SHORT).show();
         }
     }
-*/
 
 
     private void init() {

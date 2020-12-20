@@ -10,7 +10,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.text.MessageFormat;
+import java.text.SimpleDateFormat;
 import java.util.Arrays;
+import java.util.Calendar;
+import java.util.Locale;
 
 public class Lottery645 extends AppCompatActivity {
 
@@ -33,7 +36,7 @@ public class Lottery645 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 lotteryDraws645();
-                //addDatabase();
+                addDatabase();
             }
         });
 
@@ -60,21 +63,24 @@ public class Lottery645 extends AppCompatActivity {
         lo645Numb3.setText(MessageFormat.format("{0}", lotteryNumbers645[2]));
         lo645Numb4.setText(MessageFormat.format("{0}", lotteryNumbers645[3]));
         lo645Numb5.setText(MessageFormat.format("{0}", lotteryNumbers645[4]));
-        lo645Numb5.setText(MessageFormat.format("{0}", lotteryNumbers645[5]));
+        lo645Numb6.setText(MessageFormat.format("{0}", lotteryNumbers645[5]));
     }
 
 
-/*
     private void addDatabase() {
-        if (database.insert(lotteryNumbers645[0], lotteryNumbers645[1], lotteryNumbers645[2],
-                lotteryNumbers645[3], lotteryNumbers645[4], lotteryNumbers645[5])) {
+
+        Calendar calendar = Calendar.getInstance();
+        SimpleDateFormat currentDateTime = new SimpleDateFormat("yyyy.MM.dd HH:mm:ss",  Locale.getDefault());
+        String date = currentDateTime.format(calendar.getTime());
+
+        if (database.insertLottery645(lotteryNumbers645[0], lotteryNumbers645[1], lotteryNumbers645[2],
+                lotteryNumbers645[3], lotteryNumbers645[4], lotteryNumbers645[5], date)) {
             Toast.makeText(this, "Sikeres rögzítés", Toast.LENGTH_SHORT).show();
         }
         else {
             Toast.makeText(this, "Sikertelen rögzítés", Toast.LENGTH_SHORT).show();
         }
     }
-*/
 
 
     private void init() {

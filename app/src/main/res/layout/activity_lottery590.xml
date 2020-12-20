@@ -70,11 +70,11 @@
         android:text="Ötöslottó tipp"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:background="@color/btnStartBackgrnd"
+        android:background="@drawable/button_lottery_start"
         android:textColor="@color/btnStartTextColor"
         android:width="300sp"
         android:layout_marginTop="190sp"
-        android:layout_marginLeft="58sp"
+        android:layout_marginStart="58sp"
         android:id="@+id/btn590Start">
     </Button>
 
@@ -83,7 +83,7 @@
         android:layout_height="wrap_content"
         android:src="@drawable/otoslotto_4"
         android:layout_marginTop="270sp"
-        android:layout_marginLeft="10sp"
+        android:layout_marginStart="10sp"
         android:maxHeight="180sp">
     </ImageView>
 
@@ -94,7 +94,7 @@
         android:textSize="20sp"
         android:textStyle="bold"
         android:layout_marginTop="510sp"
-        android:background="@color/btnBackBackgrnd"
+        android:background="@drawable/button_lottery_back"
         android:textColor="@color/btnBackTextColor"
         android:id="@+id/btnLottery590Back">
     </Button>

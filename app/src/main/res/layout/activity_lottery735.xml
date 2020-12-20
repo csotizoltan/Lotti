@@ -16,7 +16,7 @@
             android:layout_height="wrap_content"
             android:textSize="27sp"
             android:textColor="@color/lotteryNumber1"
-            android:layout_marginStart="25sp"
+            android:layout_marginStart="10sp"
             android:layout_marginTop="105sp"
             android:id="@+id/tvLotteryNumber735Numb1">
         </TextView>
@@ -26,7 +26,7 @@
             android:layout_height="wrap_content"
             android:textSize="30sp"
             android:textColor="@color/lotteryNumber2"
-            android:layout_marginStart="40sp"
+            android:layout_marginStart="27sp"
             android:layout_marginTop="105sp"
             android:id="@+id/tvLotteryNumber735Numb2">
         </TextView>
@@ -36,7 +36,7 @@
             android:layout_height="wrap_content"
             android:textSize="30sp"
             android:textColor="@color/lotteryNumber3"
-            android:layout_marginStart="45sp"
+            android:layout_marginStart="27sp"
             android:layout_marginTop="105sp"
             android:id="@+id/tvLotteryNumber735Numb3">
         </TextView>
@@ -46,7 +46,7 @@
             android:layout_height="wrap_content"
             android:textSize="30sp"
             android:textColor="@color/lotteryNumber4"
-            android:layout_marginStart="45sp"
+            android:layout_marginStart="27sp"
             android:layout_marginTop="105sp"
             android:id="@+id/tvLotteryNumber735Numb4">
         </TextView>
@@ -56,7 +56,7 @@
             android:layout_height="wrap_content"
             android:textSize="30sp"
             android:textColor="@color/lotteryNumber5"
-            android:layout_marginStart="45sp"
+            android:layout_marginStart="27sp"
             android:layout_marginTop="105sp"
             android:id="@+id/tvLotteryNumber735Numb5">
         </TextView>
@@ -65,8 +65,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="30sp"
-            android:textColor="@color/lotteryNumber5"
-            android:layout_marginStart="45sp"
+            android:textColor="@color/lotteryNumber6"
+            android:layout_marginStart="27sp"
             android:layout_marginTop="105sp"
             android:id="@+id/tvLotteryNumber735Numb6">
         </TextView>
@@ -75,8 +75,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="30sp"
-            android:textColor="@color/lotteryNumber5"
-            android:layout_marginStart="45sp"
+            android:textColor="@color/lotteryNumber7"
+            android:layout_marginStart="27sp"
             android:layout_marginTop="105sp"
             android:id="@+id/tvLotteryNumber735Numb7">
         </TextView>
@@ -90,11 +90,11 @@
         android:text="Skandináv lottó tipp"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:background="@color/btnStartBackgrnd"
+        android:background="@drawable/button_lottery_start"
         android:textColor="@color/btnStartTextColor"
         android:width="300sp"
         android:layout_marginTop="190sp"
-        android:layout_marginLeft="58sp"
+        android:layout_marginStart="58sp"
         android:id="@+id/btn735Start">
     </Button>
 
@@ -103,7 +103,7 @@
         android:layout_height="wrap_content"
         android:src="@drawable/skandinav_lotto_1"
         android:layout_marginTop="270sp"
-        android:layout_marginLeft="58sp"
+        android:layout_marginStart="58sp"
         android:maxHeight="280sp">
     </ImageView>
 
@@ -114,7 +114,7 @@
         android:textSize="20sp"
         android:textStyle="bold"
         android:layout_marginTop="510sp"
-        android:background="@color/btnBackBackgrnd"
+        android:background="@drawable/button_lottery_back"
         android:textColor="@color/btnBackTextColor"
         android:id="@+id/btnLottery735Back">
     </Button>

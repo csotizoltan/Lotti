@@ -10,7 +10,11 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.text.MessageFormat;
+import java.text.SimpleDateFormat;
 import java.util.Arrays;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.Locale;
 
 public class Lottery590 extends AppCompatActivity {
 
@@ -64,8 +68,13 @@ public class Lottery590 extends AppCompatActivity {
 
 
     private void addDatabase() {
-        if (database.insert(lotteryNumbers590[0], lotteryNumbers590[1], lotteryNumbers590[2],
-                lotteryNumbers590[3], lotteryNumbers590[4])) {
+
+        Calendar calendar = Calendar.getInstance();
+        SimpleDateFormat currentDateTime = new SimpleDateFormat("yyyy.MM.dd HH:mm:ss",  Locale.getDefault());
+        String date = currentDateTime.format(calendar.getTime());
+
+        if (database.insertLottery590(lotteryNumbers590[0], lotteryNumbers590[1], lotteryNumbers590[2],
+                lotteryNumbers590[3], lotteryNumbers590[4], date)) {
             Toast.makeText(this, "Sikeres rögzítés", Toast.LENGTH_SHORT).show();
         }
         else {
