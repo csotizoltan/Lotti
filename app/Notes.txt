@@ -12,8 +12,27 @@ To do:
 datetime
 Alapértelmezett: CURRENT_TIMESTAMP
 
+listview
+https://abhiandroid.com/ui/listview
+
+ActionBar
+https://www.journaldev.com/9357/android-actionbar-example-tutorial
+
+
+
+How to change spinner text size and text color?
+https://stackoverflow.com/questions/9476665/how-to-change-spinner-text-size-and-text-color
+
 
 3 10 14 49 80
+
+Sync in Android sqlite and sql server (crud operation) in two ways
+https://stackoverflow.com/questions/14453577/sync-in-android-sqlite-and-sql-server-crud-operation-in-two-ways
+
+
+
+How to Get Current Date and Time in Java
+https://stackabuse.com/how-to-get-current-date-and-time-in-java/
 
 
 Project: App mappára kattitva --> New --> File. A fájl az App könytárba kerül.
@@ -71,3 +90,32 @@ Warning:(93, 6) Missing `contentDescription` attribute on image
 
 textLotteryNumber1.setText("" + lotteryNumbers[0]);
 textLotteryNumber1.setText(MessageFormat.format("{0}", lotteryNumbers[0]));
+
+
+
+
+
+
+
+
+
+
+
+
+Android Gradle Plugin
+4.1.1
+
+Gradle Version
+6.5
+
+
+Compile Skd Version
+30
+
+Build Tool Version
+30.0.3
+
+
+
+
+<!-- NOTE: EditTextPreference accepts EditText attributes. -->

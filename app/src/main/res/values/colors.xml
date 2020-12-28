@@ -4,6 +4,9 @@
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
 
+
+    <!-- Main  -->
+
     <color name="tvTitle">#9C27B0</color>
 
     <color name="btnMainTextColor590">#E8E4E4</color>
@@ -18,7 +21,7 @@
     <color name="btnMainPevTipBackgrnd">#FFAB00</color>
 
 
-    <!-- Button Main 590-->
+    <!-- Button Main 590 -->
 
     <color name="btnMainPressedBorderColor590">#FEFDF6</color>
     <color name="btnMainPressedStartColor590">#345953</color>
@@ -29,7 +32,7 @@
     <color name="btnMainShapeEndColor590">#58857e</color>
 
 
-    <!-- Button Main 645-->
+    <!-- Button Main 645 -->
 
     <color name="btnMainPressedBorderColor645">#FEFDF6</color>
     <color name="btnMainPressedStartColor645">#C51162</color>
@@ -40,7 +43,7 @@
     <color name="btnMainShapeEndColor645">#C51162</color>
 
 
-    <!-- Button Main 735-->
+    <!-- Button Main 735 -->
 
     <color name="btnMainPressedBorderColor735">#FEFDF6</color>
     <color name="btnMainPressedStartColor735">#203CDD</color>
@@ -51,7 +54,7 @@
     <color name="btnMainShapeEndColor735">#203CDD</color>
 
 
-    <!-- Button Main Eurojackpot-->
+    <!-- Button Main Eurojackpot -->
 
     <color name="btnMainPressedBorderColorEurojackpot">#FEFDF6</color>
     <color name="btnMainPressedStartColorEurojackpot">#966A39</color>
@@ -62,7 +65,7 @@
     <color name="btnMainShapeEndColorEurojackpot">#966A39</color>
 
 
-    <!-- Button Main ViewTip-->
+    <!-- Button Main ViewTip -->
 
     <color name="btnMainPressedBorderColorViewTip">#FEFDF6</color>
     <color name="btnMainPressedStartColorViewTip">#6B1098</color>
@@ -73,7 +76,7 @@
     <color name="btnMainShapeEndColorViewTip">#6B1098</color>
 
 
-    <!-- Button Main LotteryStart-->
+    <!-- Button LotteryStart -->
 
     <color name="btnMainPressedBorderColorLotteryStart">#FEFDF6</color>
     <color name="btnMainPressedStartColorLotteryStart">#16532F</color>
@@ -84,7 +87,7 @@
     <color name="btnMainShapeEndColorLotteryStart">#16532F</color>
 
 
-    <!-- Button Main LotteryBack-->
+    <!-- Button LotteryBack -->
 
     <color name="btnMainPressedBorderColorLotteryBack">#FEFDF6</color>
     <color name="btnMainPressedStartColorLotteryBack">#FFAB00</color>
@@ -95,7 +98,40 @@
     <color name="btnMainShapeEndColorLotteryBack">#FFAB00</color>
 
 
-    <!-- Lottery Numbers-->
+    <!-- Button ViewTipBack -->
+
+    <color name="btnMainPressedBorderColorViewTipBack">#FEFDF6</color>
+    <color name="btnMainPressedStartColorViewTipBack">#FFAB00</color>
+    <color name="btnMainPressedEndColorViewTipBack">#C3A76E</color>
+
+    <color name="btnMainShapeBorderColorViewTipBack">#FEFDF6</color>
+    <color name="btnMainShapeStartColorViewTipBack">#C3A76E</color>
+    <color name="btnMainShapeEndColorViewTipBack">#FFAB00</color>
+
+
+    <!-- Button AboutBack -->
+
+    <color name="btnMainPressedBorderColorAboutBack">#FEFDF6</color>
+    <color name="btnMainPressedStartColorAboutBack">#FFAB00</color>
+    <color name="btnMainPressedEndColorAboutBack">#C3A76E</color>
+
+    <color name="btnMainShapeBorderColorAboutBack">#FEFDF6</color>
+    <color name="btnMainShapeStartColorAboutBack">#C3A76E</color>
+    <color name="btnMainShapeEndColorAboutBack">#FFAB00</color>
+
+
+    <!-- Button SettingBack -->
+
+    <color name="btnMainPressedBorderColorSettingsBack">#FEFDF6</color>
+    <color name="btnMainPressedStartColorSettingsBack">#FFAB00</color>
+    <color name="btnMainPressedEndColorSettingsBack">#C3A76E</color>
+
+    <color name="btnMainShapeBorderColorSettingsBack">#FEFDF6</color>
+    <color name="btnMainShapeStartColorSettingsBack">#C3A76E</color>
+    <color name="btnMainShapeEndColorSettingsBack">#FFAB00</color>
+
+
+    <!-- Lottery Numbers -->
 
     <color name="lotteryNumber1">#F44336</color>
     <color name="lotteryNumber2">#9C27B0</color>
@@ -106,7 +142,13 @@
     <color name="lotteryNumber7">#FF6D00</color>
 
 
-    <!-- Lottery Buttons-->
+
+    <!-- Main  -->
+
+    <color name="tvAboutTitle">#9C27B0</color>
+
+
+    <!-- Lottery Buttons -->
 
     <color name="btnStartTextColor">#E8E4E4</color>
     <color name="btnBackTextColor">#F3EDED</color>

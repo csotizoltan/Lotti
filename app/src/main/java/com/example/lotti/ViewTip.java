@@ -1,5 +1,6 @@
 package com.example.lotti;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -7,6 +8,8 @@ import android.database.Cursor;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -17,7 +20,7 @@ import android.widget.Toast;
 
 public class ViewTip extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
-    private Button btnLottery590Back;
+    private Button btnViewTipBack;
     private TextView tvViewTip;
 
     private Spinner ViewTipLotteryType;
@@ -32,9 +35,10 @@ public class ViewTip extends AppCompatActivity implements AdapterView.OnItemSele
         setContentView(R.layout.activity_view_tip);
 
         init();
-        viewTipSpinner();
+        viewTipSpinner(); // Spinner létrehozása
+        viewSetSpinner(); // Beállítja, hogy melyik lottófajta korábbi tippjei legyenek megjelenítve a Activity-ben
 
-        btnLottery590Back.setOnClickListener(new View.OnClickListener() {
+        btnViewTipBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent main = new Intent(ViewTip.this, MainActivity.class);
@@ -43,6 +47,7 @@ public class ViewTip extends AppCompatActivity implements AdapterView.OnItemSele
             }
         });
     }
+
 
     private void viewTipSpinner() {
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(ViewTip.this,
@@ -60,12 +65,15 @@ public class ViewTip extends AppCompatActivity implements AdapterView.OnItemSele
             case 0:
                 lotteryNumbersView590();
                 break;
+
             case 1:
                 lotteryNumbersView645();
                 break;
+
             case 2:
                 lotteryNumbersView735();
                 break;
+
             case 3:
                 lotteryNumbersViewEurojackpot();
                 break;
@@ -79,6 +87,31 @@ public class ViewTip extends AppCompatActivity implements AdapterView.OnItemSele
     @Override
     public void onNothingSelected(AdapterView<?> parent) {
 
+    }
+
+
+    private void viewSetSpinner() {
+        Bundle bundle = getIntent().getExtras();
+        String whichActivity = bundle.getString("activity");
+
+        if (whichActivity.equals("Lottery590")) {
+            ViewTipLotteryType.setSelection(0); // megadja, hogy a Spinner melyik elemét válasza ki --> Lottery590
+        }
+
+        else if (whichActivity.equals("Lottery645")) {
+            ViewTipLotteryType.setSelection(1);
+
+        }
+
+        else if (whichActivity.equals("Lottery735")) {
+            ViewTipLotteryType.setSelection(2);
+
+        }
+
+        else if (whichActivity.equals("LotteryEurojackpot")) {
+            ViewTipLotteryType.setSelection(3);
+
+        }
     }
 
 
@@ -205,8 +238,54 @@ public class ViewTip extends AppCompatActivity implements AdapterView.OnItemSele
     }
 
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_view_tip, menu);
+        return true;
+    }
+
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.activity_main:
+                Intent main = new Intent(ViewTip.this, MainActivity.class);
+                startActivity(main);
+                finish();
+                return (true);
+
+                // -- Törölhető ---------------
+
+            case R.id.activity_view_tip_list_view:
+                Intent activity_view_tip_list_view = new Intent(ViewTip.this, ViewTipListViewActivity.class);
+                startActivity(activity_view_tip_list_view);
+                finish();
+                return (true);
+
+            case R.id.settings:
+                Intent settings = new Intent(ViewTip.this, SettingsActivity.class);
+                settings.putExtra("activity", "ViewTip");
+                startActivity(settings);
+                finish();
+                return (true);
+
+            case R.id.about:
+                Intent about = new Intent(ViewTip.this, AboutActivity.class);
+                about.putExtra("activity", "ViewTip");
+                startActivity(about);
+                finish();
+                return (true);
+
+            case R.id.exit:
+                finish();
+                return (true);
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+
     private void init() {
-        btnLottery590Back = findViewById(R.id.btnLottery590Back);
+        btnViewTipBack = findViewById(R.id.btnViewTipBack);
         tvViewTip = findViewById(R.id.tvViewTip);
         ViewTipLotteryType = findViewById(R.id.spViewTipLotteryType);
 

@@ -1,4 +1,23 @@
 <resources>
-    <string name="app_name">Lotti</string>
-    <string name="title">Lottery generator v0.3 &#8211; Csóti Zoltán</string>
+    <string name="app_name" translatable="false">Lotti</string>
+
+    <!-- ActionBar -->
+
+    <string name="activity_main" translatable="false">Menü</string>
+    <string name="about" translatable="false">Alkalmazásról</string>
+    <string name="settings" translatable="false">Beállítások</string>
+    <string name="exit" translatable="false">Kilépés</string>
+
+    <!-- Main -->
+    <string name="main_title" translatable="false">Lotti</string>
+
+    <string name="main_button_prev_tip" translatable="false">Korábbi tippek</string>
+
+    <!-- About -->
+    <string name="about_title" translatable="false">Lottery generator v0.4</string>
+    <string name="about_developer" translatable="false">Developed by\nCsóti Zoltán</string>
+    <string name="about_github" translatable="false">https://github.com/csotizoltan/Lotti</string>
+    <string name="about_www" translatable="false">http://users.atw.hu/czoltan/</string>
+    <string name="about_email" translatable="false">csoti.zoltan@gmail.com</string>
+
 </resources>

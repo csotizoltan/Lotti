@@ -1,9 +1,12 @@
 package com.example.lotti;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -81,6 +84,51 @@ public class Lottery735 extends AppCompatActivity {
         else {
             Toast.makeText(this, "Sikertelen rögzítés", Toast.LENGTH_SHORT).show();
         }
+    }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_lottery735, menu);
+        return true;
+    }
+
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.activity_main:
+                Intent main = new Intent(Lottery735.this, MainActivity.class);
+                startActivity(main);
+                finish();
+                return (true);
+
+            case R.id.prevTip:
+                Intent prevTip = new Intent(Lottery735.this, ViewTip.class);
+                prevTip.putExtra("activity", "Lottery735");
+                startActivity(prevTip);
+                finish();
+                return (true);
+
+            case R.id.settings:
+                Intent settings = new Intent(Lottery735.this, SettingsActivity.class);
+                settings.putExtra("activity", "Lottery735");
+                startActivity(settings);
+                finish();
+                return (true);
+
+            case R.id.about:
+                Intent about = new Intent(Lottery735.this, AboutActivity.class);
+                about.putExtra("activity", "Lottery735");
+                startActivity(about);
+                finish();
+                return (true);
+
+            case R.id.exit:
+                finish();
+                return (true);
+        }
+        return super.onOptionsItemSelected(item);
     }
 
 

@@ -28,19 +28,11 @@
         android:id="@+id/spViewTipLotteryType">
     </Spinner>
 
-    <TextView
+    <ListView
         android:layout_width="match_parent"
-        android:layout_height="550sp"
-        android:textSize="23sp"
-        android:textColor="@color/btnMainPressedEndColor645"
-        android:lineSpacingExtra="-3sp"
-        android:layout_marginTop="74sp"
-        android:layout_marginBottom="40sp"
-        android:layout_marginStart="25sp"
-        android:maxLines="99"
-        android:layout_above="@+id/btnLottery590Back"
-        android:id="@+id/tvViewTip">
-    </TextView>
+        android:layout_height="wrap_content"
+        android:id="@+id/lvViewTip">
+    </ListView>
 
     <Button
         android:layout_width="match_parent"
