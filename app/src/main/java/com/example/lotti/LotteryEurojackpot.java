@@ -18,7 +18,7 @@ import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Locale;
 
-public class Eurojackpot extends AppCompatActivity {
+public class LotteryEurojackpot extends AppCompatActivity {
 
     private TextView tvEurojackpotANumber1, tvEurojackpotANumber2, tvEurojackpotANumber3, tvEurojackpotANumber4,
             tvEurojackpotANumber5, tvEurojackpotBNumber1, tvEurojackpotBNumber2;
@@ -48,7 +48,7 @@ public class Eurojackpot extends AppCompatActivity {
         btnEurojackpotBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent main = new Intent(Eurojackpot.this, MainActivity.class);
+                Intent main = new Intent(LotteryEurojackpot.this, MainActivity.class);
                 startActivity(main);
                 finish();
             }
@@ -107,27 +107,27 @@ public class Eurojackpot extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
             case R.id.activity_main:
-                Intent main = new Intent(Eurojackpot.this, MainActivity.class);
+                Intent main = new Intent(LotteryEurojackpot.this, MainActivity.class);
                 startActivity(main);
                 finish();
                 return (true);
 
             case R.id.prevTip:
-                Intent prevTip = new Intent(Eurojackpot.this, ViewTip.class);
+                Intent prevTip = new Intent(LotteryEurojackpot.this, ViewTip.class);
                 prevTip.putExtra("activity", "LotteryEurojackpot");
                 startActivity(prevTip);
                 finish();
                 return (true);
 
             case R.id.settings:
-                Intent settings = new Intent(Eurojackpot.this, SettingsActivity.class);
+                Intent settings = new Intent(LotteryEurojackpot.this, SettingsActivity.class);
                 settings.putExtra("activity", "LotteryEurojackpot");
                 startActivity(settings);
                 finish();
                 return (true);
 
             case R.id.about:
-                Intent about = new Intent(Eurojackpot.this, AboutActivity.class);
+                Intent about = new Intent(LotteryEurojackpot.this, AboutActivity.class);
                 about.putExtra("activity", "LotteryEurojackpot");
                 startActivity(about);
                 finish();
@@ -152,6 +152,6 @@ public class Eurojackpot extends AppCompatActivity {
         btnEurojackpotStart = findViewById(R.id.btnEurojackpotStart);
         btnEurojackpotBack = findViewById(R.id.btnEurojackpotBack);
 
-        database = new DBhelper(Eurojackpot.this);
+        database = new DBhelper(LotteryEurojackpot.this);
     }
 }

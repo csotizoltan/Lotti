@@ -9,7 +9,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 public class AboutActivity extends AppCompatActivity {
 
@@ -48,7 +47,7 @@ public class AboutActivity extends AppCompatActivity {
                 }
 
                 else if (whichActivity.equals("LotteryEurojackpot")) {
-                    Intent LotteryEurojackpot = new Intent(AboutActivity.this, Eurojackpot.class);
+                    Intent LotteryEurojackpot = new Intent(AboutActivity.this, com.example.lotti.LotteryEurojackpot.class);
                     startActivity(LotteryEurojackpot);
                     finish();
                 }

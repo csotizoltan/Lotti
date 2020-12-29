@@ -54,7 +54,7 @@ public class DBhelper extends SQLiteOpenHelper {
     public static final String COL_DATE_735 = "date";
 
 
-    // ----------- Lottery Eurojackpot -----------
+    // ----------- Lottery LotteryEurojackpot -----------
 
     public static final String lOTTERY_TABLE_Eurojackpot = "lotteryEurojackpot";
 

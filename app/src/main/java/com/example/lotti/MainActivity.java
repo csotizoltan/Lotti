@@ -9,7 +9,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -56,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         btnMainEurojackpot.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent eurojackpot = new Intent(MainActivity.this, Eurojackpot.class);
+                Intent eurojackpot = new Intent(MainActivity.this, LotteryEurojackpot.class);
                 startActivity(eurojackpot);
                 finish();
             }

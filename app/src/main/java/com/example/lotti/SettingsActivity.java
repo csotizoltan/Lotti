@@ -46,7 +46,7 @@ public class SettingsActivity extends AppCompatActivity {
                 }
 
                 else if (whichActivity.equals("LotteryEurojackpot")) {
-                    Intent main = new Intent(SettingsActivity.this, Eurojackpot.class);
+                    Intent main = new Intent(SettingsActivity.this, LotteryEurojackpot.class);
                     startActivity(main);
                     finish();
                 }

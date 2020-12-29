@@ -3,11 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".Lottery645">
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
@@ -89,11 +89,11 @@
     </Button>
 
     <ImageView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:src="@drawable/hatoslotto_1"
-        android:layout_marginTop="255sp"
-        android:maxHeight="180sp">
+        android:layout_marginTop="270sp"
+        android:layout_centerHorizontal="true">
     </ImageView>
 
     <Button
@@ -102,9 +102,9 @@
         android:text="Vissza"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:layout_marginTop="510sp"
         android:background="@drawable/button_lottery_back"
         android:textColor="@color/btnBackTextColor"
+        android:layout_alignParentBottom="true"
         android:id="@+id/btnLottery645Back">
     </Button>
 

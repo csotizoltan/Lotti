@@ -27,7 +27,7 @@
             android:name=".Lottery735"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Eurojackpot"
+            android:name=".LotteryEurojackpot"
             android:screenOrientation="portrait" />
         <activity
             android:name=".ViewTip"
